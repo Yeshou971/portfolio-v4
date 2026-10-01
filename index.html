@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeshua Suedois — Dev Web</title>
+    <link rel="icon" href="profil-2.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a class="nav-brand" href="#accueil">
+            <span class="brand-bracket">{</span>YS<span class="brand-bracket">}</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#accueil"     class="nav-link active"><span class="nl-num">01.</span>Accueil</a></li>
+            <li><a href="#apropos"     class="nav-link"><span class="nl-num">02.</span>À propos</a></li>
+            <li><a href="#formation"   class="nav-link"><span class="nl-num">03.</span>Formation</a></li>
+            <li><a href="#competences" class="nav-link"><span class="nl-num">04.</span>Skills</a></li>
+            <li><a href="#projets"     class="nav-link"><span class="nl-num">05.</span>Projets</a></li>
+            <li><a href="#contact"     class="nav-link"><span class="nl-num">06.</span>Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <i class='bx bx-menu'></i>
+        </button>
+    </nav>
+
+    <!-- 01 HERO -->
+    <section class="panel" id="accueil">
+        <div class="panel-inner hero-layout">
+            <div class="hero-left">
+                <div class="terminal-window">
+                    <div class="term-bar">
+                        <span class="dot dot-r"></span>
+                        <span class="dot dot-y"></span>
+                        <span class="dot dot-g"></span>
+                        <span class="term-title">~/portfolio — zsh</span>
+                    </div>
+                    <div class="term-body">
+                        <p><span class="t-prompt">yeshua@dev</span><span class="t-sep">:</span><span class="t-path">~</span><span class="t-dollar">$</span>&nbsp;<span id="typeTarget" class="t-cmd"></span><span class="cursor" id="termCursor">▋</span></p>
+                        <div class="term-output" id="termOutput">
+                            <p><span class="t-key">nom</span>       <span class="t-eq">=</span> <span class="t-str">"Yeshua Suedois"</span></p>
+                            <p><span class="t-key">role</span>      <span class="t-eq">=</span> <span class="t-str">"Développeur Web"</span></p>
+                            <p><span class="t-key">formation</span> <span class="t-eq">=</span> <span class="t-str">"BTS SIO SLAM"</span></p>
+                            <p><span class="t-key">stack</span>     <span class="t-eq">=</span> <span class="t-arr">["HTML","CSS","JS","PHP","Python"]</span></p>
+                            <p><span class="t-key">dispo</span>     <span class="t-eq">=</span> <span class="t-bool">True</span> <span class="t-comment"># alternance 2026</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="CV-SUEDOIS.pdf" target="_blank" class="btn btn-primary"><i class='bx bx-download'></i> CV</a>
+                    <a href="#contact" class="btn btn-ghost"><i class='bx bx-envelope'></i> Contact</a>
+                    <a href="https://github.com/Yeshou971" target="_blank" class="btn btn-icon" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/yeshua-suedois-3a52b4350/" target="_blank" class="btn btn-icon" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-img-wrap">
+                    <img src="profil-2.jpeg" alt="Yeshua Suedois" class="hero-img">
+                    <div class="img-ring"></div>
+                </div>
+                <div class="hero-badge"><span class="badge-dot"></span>Disponible en alternance</div>
+            </div>
+        </div>
+        <span class="panel-num">01</span>
+        <a href="#apropos" class="scroll-hint desktop-only" aria-label="Section suivante"><i class='bx bx-chevron-right'></i></a>
+        <a href="#apropos" class="scroll-hint mobile-only"  aria-label="Section suivante"><i class='bx bx-chevron-down'></i></a>
+    </section>
+
+    <!-- 02 À PROPOS -->
+    <section class="panel panel-alt" id="apropos">
+        <div class="panel-inner">
+            <h2 class="section-title">À propos<span class="title-line"></span></h2>
+            <div class="apropos-grid">
+                <div class="apropos-block">
+                    <p class="block-label">// qui_suis_je()</p>
+                    <p>Passionné par le développement web et les nouvelles technologies, je suis étudiant en <strong>BTS SIO option SLAM</strong> à My Digital School (Paris). Je conçois des interfaces modernes, des outils SaaS et des projets culturels.</p>
+                    <p style="margin-top:.9rem">En parallèle de mes études, je gère <strong>K Entertainment</strong>, un label de production musicale guadeloupéen.</p>
+                </div>
+                <div class="apropos-block">
+                    <p class="block-label">// objectifs()</p>
+                    <p>Devenir un développeur web polyvalent, capable de piloter un projet de la maquette à la mise en production. Je veux maîtriser les dernières technologies tout en restant fidèle aux bonnes pratiques du développement de qualité.</p>
+                    <div class="apropos-tags">
+                        <span>Full-stack</span>
+                        <span>Alternance</span>
+                        <span>Entrepreneur</span>
+                        <span>Gwada × Paris</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="panel-num">02</span>
+    </section>
+
+    <!-- 03 FORMATION -->
+    <section class="panel" id="formation">
+        <div class="panel-inner">
+            <h2 class="section-title">Formation<span class="title-line"></span></h2>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-year">2017 — 2018</div>
+                    <div class="tl-content">
+                        <h3>Formation en ligne <span class="tl-tag">OpenClassrooms</span></h3>
+                        <p>Premiers pas HTML5 &amp; CSS3. Découverte de Sublime Text, premières pages web construites from scratch.</p>
+                    </div>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-year">2019 — 2023</div>
+                    <div class="tl-content">
+                        <h3>Jeune Sapeur Pompier <span class="tl-tag">Engagement</span></h3>
+                        <p>Gestes de secours, discipline collective, travail en équipe sous pression.</p>
+                    </div>
+                </div>
+                <div class="tl-item tl-current">
+                    <div class="tl-year">2024 — 2027</div>
+                    <div class="tl-content">
+                        <h3>BTS SIO SLAM <span class="tl-tag tl-tag-active">En cours</span></h3>
+                        <p>My Digital School — Île-de-France. Dev logiciel et web, bases de données, réseaux, cybersécurité, droit informatique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="panel-num">03</span>
+    </section>
+
+    <!-- 04 COMPÉTENCES -->
+    <section class="panel panel-alt" id="competences">
+        <div class="panel-inner">
+            <h2 class="section-title">Compétences<span class="title-line"></span></h2>
+            <div class="skills-wrap">
+                <div class="skills-col">
+                    <p class="col-label">Front-end</p>
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="sk-lang html">HTML</span><div class="sk-bar"><div class="sk-fill" style="--w:90%"></div></div><span class="sk-pct">90%</span></div>
+                        <div class="skill-item"><span class="sk-lang css">CSS</span><div class="sk-bar"><div class="sk-fill" style="--w:85%"></div></div><span class="sk-pct">85%</span></div>
+                        <div class="skill-item"><span class="sk-lang js">JS</span><div class="sk-bar"><div class="sk-fill" style="--w:75%"></div></div><span class="sk-pct">75%</span></div>
+                        <div class="skill-item"><span class="sk-lang react">React</span><div class="sk-bar"><div class="sk-fill" style="--w:55%"></div></div><span class="sk-pct">55%</span></div>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <p class="col-label">Back-end</p>
+                    <div class="skill-list">
+                        <div class="skill-item"><span class="sk-lang php">PHP</span><div class="sk-bar"><div class="sk-fill" style="--w:65%"></div></div><span class="sk-pct">65%</span></div>
+                        <div class="skill-item"><span class="sk-lang python">Python</span><div class="sk-bar"><div class="sk-fill" style="--w:60%"></div></div><span class="sk-pct">60%</span></div>
+                        <div class="skill-item"><span class="sk-lang node">Node.js</span><div class="sk-bar"><div class="sk-fill" style="--w:45%"></div></div><span class="sk-pct">45%</span></div>
+                    </div>
+                </div>
+                <div class="skills-col">
+                    <p class="col-label">Outils</p>
+                    <div class="tools-grid">
+                        <span class="tool-chip"><i class='bx bxl-figma'></i>Figma</span>
+                        <span class="tool-chip"><i class='bx bxl-git'></i>Git</span>
+                        <span class="tool-chip"><i class='bx bxl-github'></i>GitHub</span>
+                        <span class="tool-chip"><i class='bx bx-data'></i>SQL</span>
+                        <span class="tool-chip"><i class='bx bx-terminal'></i>Bash</span>
+                        <span class="tool-chip"><i class='bx bxl-netlify'></i>Netlify</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="panel-num">04</span>
+    </section>
+
+    <!-- 05 PROJETS -->
+    <section class="panel" id="projets">
+        <div class="panel-inner">
+            <h2 class="section-title">Projets<span class="title-line"></span></h2>
+            <div class="projects-grid">
+                <div class="proj-card">
+                    <div class="proj-img-wrap">
+                        <img src="projet.png" alt="The Camp">
+                        <div class="proj-overlay">
+                            <a href="https://thecampmmi.netlify.app" target="_blank" class="btn btn-primary btn-sm">
+                                <i class='bx bx-link-external'></i> Voir le projet
+                            </a>
+                        </div>
+                    </div>
+                    <div class="proj-meta">
+                        <div class="proj-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>QR Code</span>
+                        </div>
+                        <h3>The Camp</h3>
+                        <p>Serious game de découverte du campus universitaire via des QR codes — les étudiants explorent les lieux tout en apprenant l'histoire du site.</p>
+                        <a href="https://thecampmmi.netlify.app" target="_blank" class="proj-link">thecampmmi.netlify.app <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="proj-card proj-ghost">
+                    <p class="block-label">// next_project.init()</p>
+                    <p>En cours de développement…</p>
+                    <span class="ghost-cur">▋</span>
+                </div>
+            </div>
+        </div>
+        <span class="panel-num">05</span>
+    </section>
+
+    <!-- 06 CONTACT -->
+    <section class="panel panel-alt" id="contact">
+        <div class="panel-inner">
+            <h2 class="section-title">Contact<span class="title-line"></span></h2>
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <p class="block-label">// me_contacter()</p>
+                    <p>Tu as un projet, une question ou une opportunité d'alternance ? Écris-moi, je réponds rapidement.</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/Yeshou971" target="_blank" class="clink"><i class='bx bxl-github'></i><span>github.com/Yeshou971</span></a>
+                        <a href="https://www.linkedin.com/in/yeshua-suedois-3a52b4350/" target="_blank" class="clink"><i class='bx bxl-linkedin'></i><span>LinkedIn</span></a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nom</label>
+                            <input type="text" name="name" placeholder="Jean Dupont" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="jean@mail.fr" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" rows="5" placeholder="Ton message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-send"><i class='bx bx-send'></i> Envoyer</button>
+                    <p class="form-note" id="formStatus"></p>
+                </form>
+            </div>
+        </div>
+        <span class="panel-num">06</span>
+    </section>
+
+    <footer class="footer">
+        <span class="foot-brand">{YS}</span>
+        <span class="foot-sep">·</span>
+        <span>Yeshua Suedois — Développeur Web · © 2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
